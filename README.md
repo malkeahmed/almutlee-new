@@ -34,7 +34,9 @@
 |---|---|---|
 | <img src="https://via.placeholder.com/400x220/ffffff/102042?text=Hero+White+Gold" width="400" /> | <img src="https://via.placeholder.com/400x220/102042/ffbe00?text=Article+Detail" width="400" /> | <img src="https://via.placeholder.com/400x220/0b152b/ffbe00?text=Drawer+%2B+Ticker" width="400" /> |
 
-**Live Demo:** *(deploy to Vercel/Netlify first — see Deployment below)* → *your live URL will appear here after deploy, e.g. `https://almutlee-new.vercel.app`*
+**Live Demo:** https://malkeahmed.github.io/almutlee-new/ ✨ *(GitHub Pages — auto-deployed from `gh-pages` branch)*
+
+> If you see 404, enable Pages: GitHub → Settings → Pages → Source: `gh-pages` / `root` → Save. Wait ~1 min.
 
 ---
 
