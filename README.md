@@ -34,7 +34,7 @@
 |---|---|---|
 | <img src="https://via.placeholder.com/400x220/ffffff/102042?text=Hero+White+Gold" width="400" /> | <img src="https://via.placeholder.com/400x220/102042/ffbe00?text=Article+Detail" width="400" /> | <img src="https://via.placeholder.com/400x220/0b152b/ffbe00?text=Drawer+%2B+Ticker" width="400" /> |
 
-**Live Demo:** *(add Vercel / Netlify URL after deploy)* → `https://almutlee.example.com`
+**Live Demo:** *(deploy to Vercel/Netlify first — see Deployment below)* → *your live URL will appear here after deploy, e.g. `https://almutlee-new.vercel.app`*
 
 ---
 
@@ -236,10 +236,16 @@ npm run build
 # drag & drop dist/ or connect GitHub repo
 ```
 
-### GitHub Pages
+### GitHub Pages (free — works now)
 ```bash
+# 1. Set base in vite.config.js:
+# export default defineConfig({ base: '/almutlee-new/', plugins: [react()] })
+
 npm run build
-# set vite.config.js base: '/almutlee-new/' if needed
+npm install -D gh-pages
+# package.json: add "homepage" and deploy scripts if needed
+npx gh-pages -d dist
+# → https://malkeahmed.github.io/almutlee-new/
 ```
 
 ---
