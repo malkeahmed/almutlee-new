@@ -93,7 +93,7 @@ export default function Header({
             }}
           >
             <img
-              src="/logo.png"
+              src={import.meta.env.BASE_URL + "logo.png"}
               alt="المطلع"
               className="header-brand-logo"
             />

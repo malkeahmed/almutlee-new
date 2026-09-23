@@ -183,7 +183,7 @@ export default function ConnectedDrawerMenu({
           
           {/* Logo & Agency Title (Clean No Box) */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <img src="/logo.png" alt="Logo" style={{ height: '36px', objectFit: 'contain', display: 'block' }} />
+            <img src={import.meta.env.BASE_URL + "logo.png"} alt="Logo" style={{ height: '36px', objectFit: 'contain', display: 'block' }} />
             <div>
               <h3 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#ffffff', lineHeight: 1.1 }}>{t.siteName}</h3>
               <p style={{ fontSize: '0.7rem', color: 'var(--color-secondary)', fontWeight: 700, marginTop: '2px' }}>

@@ -108,7 +108,7 @@ export default function AppDownloadModal({ isOpen, onClose, lang }) {
               justifyContent: 'center',
               boxShadow: '0 8px 25px rgba(255, 190, 0, 0.35)'
             }}>
-              <img src="/logo.png" alt="Almutlee" style={{ height: '48px', objectFit: 'contain' }} />
+              <img src={import.meta.env.BASE_URL + "logo.png"} alt="Almutlee" style={{ height: '48px', objectFit: 'contain' }} />
             </div>
 
             {/* Platform Icons */}

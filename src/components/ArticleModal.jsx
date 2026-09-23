@@ -14,7 +14,7 @@ export default function ArticleModal({ article, lang = 'ar', onClose, onOpenAppD
     ? (article.title[lang] || article.title['ar'] || '') 
     : (typeof article === 'string' ? article : '');
 
-  const articleImage = typeof article === 'object' && article.image ? article.image : '/logo.png';
+  const articleImage = typeof article === 'object' && article.image ? article.image : import.meta.env.BASE_URL + 'logo.png';
   const categoryTag = typeof article === 'object' && article.tag ? article.tag[lang] : (lang === 'ar' ? 'تغطية خاصة' : 'ڕووماڵی تایبەت');
 
   return (

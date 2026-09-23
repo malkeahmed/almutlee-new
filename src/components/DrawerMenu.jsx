@@ -68,7 +68,7 @@ export default function DrawerMenu({ isOpen, onClose, currentCategory, onSelectC
           background: 'rgba(16, 32, 66, 0.95)'
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
-            <img src="/logo.png" alt="Logo" style={{ height: '42px', objectFit: 'contain', filter: 'drop-shadow(0 0 8px rgba(255,190,0,0.5))' }} />
+            <img src={import.meta.env.BASE_URL + "logo.png"} alt="Logo" style={{ height: '42px', objectFit: 'contain', filter: 'drop-shadow(0 0 8px rgba(255,190,0,0.5))' }} />
             <div>
               <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#ffffff', lineHeight: 1.1 }}>{t.siteName}</h3>
               <p style={{ fontSize: '0.72rem', color: 'var(--color-secondary)', fontWeight: 700, marginTop: '2px' }}>

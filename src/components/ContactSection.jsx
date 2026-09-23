@@ -45,7 +45,7 @@ export default function ContactSection({ lang }) {
           <div style={{ gridColumn: 'span 4' }} className="grid-col-mobile">
             <div style={{ background: '#102042', color: 'white', padding: '1.75rem', borderRadius: '4px', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
               <div>
-                <img src="/logo.png" alt="Logo" style={{ height: '50px', marginBottom: '1rem' }} />
+                <img src={import.meta.env.BASE_URL + "logo.png"} alt="Logo" style={{ height: '50px', marginBottom: '1rem' }} />
                 <h3 style={{ fontSize: '1.4rem', fontWeight: 900, color: 'var(--color-secondary)', marginBottom: '0.5rem' }}>المطلع</h3>
                 <p style={{ fontSize: '0.85rem', color: '#cbd5e1', lineHeight: 1.6, marginBottom: '1.5rem' }}>
                   {t.siteTagline}

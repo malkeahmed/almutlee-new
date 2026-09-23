@@ -58,7 +58,7 @@ export default function AboutSection({ lang }) {
 
           <div style={{ gridColumn: 'span 5', textAlign: 'center' }} className="grid-col-mobile">
             <div style={{ background: 'rgba(255,255,255,0.03)', padding: '2rem', borderRadius: '4px', border: '1px solid rgba(255,190,0,0.3)' }}>
-              <img src="/logo.png" alt="Logo" style={{ height: '90px', margin: '0 auto 1.25rem auto', filter: 'drop-shadow(0 4px 12px rgba(255, 190, 0, 0.4))' }} />
+              <img src={import.meta.env.BASE_URL + "logo.png"} alt="Logo" style={{ height: '90px', margin: '0 auto 1.25rem auto', filter: 'drop-shadow(0 4px 12px rgba(255, 190, 0, 0.4))' }} />
               <h3 style={{ fontSize: '1.8rem', fontWeight: 900, color: 'white' }}>المطلع</h3>
               <p style={{ color: 'var(--color-secondary)', fontWeight: 700, fontSize: '0.9rem', marginTop: '0.2rem' }}>Almutlee News Agency</p>
               <span style={{ display: 'inline-block', marginTop: '1rem', padding: '0.35rem 0.85rem', background: 'rgba(255,190,0,0.15)', color: 'var(--color-secondary)', borderRadius: '4px', fontSize: '0.8rem', fontWeight: 700 }}>

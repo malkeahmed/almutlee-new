@@ -43,7 +43,7 @@ export default function ArticleDetailPage({
 
   const articleTitle = article && article.title ? (article.title[lang] || article.title['ar'] || '') : '';
   const articleSummary = article && article.summary ? (article.summary[lang] || article.summary['ar'] || '') : '';
-  const articleImage = article && article.image ? article.image : '/logo.png';
+  const articleImage = article && article.image ? article.image : import.meta.env.BASE_URL + 'logo.png';
   const categoryTag = article && article.tag ? article.tag[lang] : (lang === 'ar' ? 'تغطية خاصة' : 'ڕووماڵی تایبەت');
   const authorName = article && article.author ? article.author.name[lang] : (lang === 'ar' ? 'وكالة المُطّلع' : 'ئاژانسی المطلع');
 

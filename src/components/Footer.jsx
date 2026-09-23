@@ -71,7 +71,7 @@ export default function Footer({ lang, onSelectCategory, onOpenModal }) {
               style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', marginBottom: '1.25rem', cursor: 'pointer' }}
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
-              <img src="/logo.png" alt="المطلع" style={{ height: '56px', objectFit: 'contain' }} />
+              <img src={import.meta.env.BASE_URL + "logo.png"} alt="المطلع" style={{ height: '56px', objectFit: 'contain' }} />
               <div>
                 <h3 style={{ fontSize: '1.85rem', fontWeight: 900, color: '#ffffff', margin: 0, lineHeight: 1 }}>المطلع</h3>
                 <span style={{ fontSize: '0.72rem', color: 'var(--color-secondary)', fontWeight: 800, letterSpacing: '0.5px' }}>

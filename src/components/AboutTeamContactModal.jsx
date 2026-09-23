@@ -36,7 +36,7 @@ export default function AboutTeamContactModal({ modalType, onClose, lang }) {
           borderBottom: '2px solid var(--color-secondary)'
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-            <img src="/logo.png" alt="Logo" style={{ height: '36px', objectFit: 'contain' }} />
+            <img src={import.meta.env.BASE_URL + "logo.png"} alt="Logo" style={{ height: '36px', objectFit: 'contain' }} />
             <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--color-secondary)' }}>
               {modalType === 'about' && t.aboutUs.title}
               {modalType === 'team' && t.team.title}
@@ -55,7 +55,7 @@ export default function AboutTeamContactModal({ modalType, onClose, lang }) {
           {modalType === 'about' && (
             <div>
               <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
-                <img src="/logo.png" alt="Logo" style={{ height: '70px', margin: '0 auto 1rem auto' }} />
+                <img src={import.meta.env.BASE_URL + "logo.png"} alt="Logo" style={{ height: '70px', margin: '0 auto 1rem auto' }} />
                 <h2 style={{ fontSize: '1.5rem', fontWeight: 900, color: 'var(--color-primary)' }}>{t.siteName}</h2>
                 <p style={{ color: 'var(--color-secondary)', fontWeight: 700 }}>{t.siteTagline}</p>
               </div>
