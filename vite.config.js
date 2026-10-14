@@ -3,7 +3,8 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/almutlee-new/',
+  // Netlify serves from the site root; GitHub Pages serves from /almutlee-new/
+  base: process.env.NETLIFY ? '/' : '/almutlee-new/',
   plugins: [react()],
   server: {
     port: 3000,
