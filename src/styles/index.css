@@ -883,7 +883,7 @@ img {
   align-items: center;
   gap: 0.85rem;
   padding: 0.75rem;
-  background: #14223f;
+  background: #ebebeb;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 6px;
   cursor: pointer;
@@ -906,7 +906,7 @@ img {
 }
 
 .hero-side-item:hover {
-  background: #1c2e52;
+  background: #dedede;
   border-color: rgba(255, 190, 0, 0.45);
   transform: translateX(-5px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
@@ -915,6 +915,33 @@ img {
 .hero-side-item:hover::before {
   opacity: 1;
   transform: scaleY(1);
+}
+
+/* Light-gray cards: dark text, navy accents, gold edge */
+.hero-side-item {
+  border-right: 4px solid var(--color-secondary);
+}
+
+.hero-side-item h4 {
+  color: #0f172a !important;
+}
+
+.hero-side-item > div:last-child span[style*="rgb(148, 163, 184)"],
+.hero-side-item > div:last-child span[style*="rgb(100, 116, 139)"] {
+  color: #52525b !important;
+}
+
+.hero-side-item > div:last-child span[style*="rgb(147, 197, 253)"] {
+  color: #1a2f5c !important;
+}
+
+.hero-side-item > div:last-child span[style*="var(--color-secondary)"] {
+  color: #1a2f5c !important;
+}
+
+.hero-side-item .hero-side-num {
+  color: #1a2f5c;
+  text-shadow: none;
 }
 
 .hero-side-thumb {
