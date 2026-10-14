@@ -668,7 +668,7 @@ export default function HeroSection({ heroArticle, topArticles, lang, onSelectAr
               {/* Header with Switcher Tabs */}
               <div style={{ marginBottom: '0.85rem', borderBottom: '1px solid rgba(255, 190, 0, 0.25)', paddingBottom: '0.75rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.75rem' }}>
-                  <h3 style={{
+                  <h3 className="hero-side-title" style={{
                     fontSize: '1.15rem',
                     fontWeight: 900,
                     color: 'var(--color-secondary)',
@@ -680,7 +680,7 @@ export default function HeroSection({ heroArticle, topArticles, lang, onSelectAr
                     <TrendingUp size={19} />
                     {lang === 'ar' ? 'رادار المتابعات الإخبارية' : 'ڕاداری هەواڵەکان'}
                   </h3>
-                  <span style={{
+                  <span className="hero-side-live" style={{
                     fontSize: '0.72rem',
                     color: '#ffffff',
                     background: 'rgba(255, 190, 0, 0.22)',
@@ -694,7 +694,7 @@ export default function HeroSection({ heroArticle, topArticles, lang, onSelectAr
                 </div>
 
                 {/* Sub Filter Tabs */}
-                <div style={{ display: 'flex', gap: '0.35rem', background: 'rgba(5, 10, 24, 0.8)', padding: '0.25rem', borderRadius: '5px' }}>
+                <div className="hero-side-tabs" style={{ display: 'flex', gap: '0.35rem', background: 'rgba(5, 10, 24, 0.8)', padding: '0.25rem', borderRadius: '5px' }}>
                   <button
                     onClick={() => setActiveSideTab('highlights')}
                     style={{
@@ -850,7 +850,7 @@ export default function HeroSection({ heroArticle, topArticles, lang, onSelectAr
               </div>
 
               {/* Bottom Quick Status Ribbon */}
-              <div style={{
+              <div className="hero-side-footer" style={{
                 marginTop: '1rem',
                 paddingTop: '0.75rem',
                 borderTop: '1px solid rgba(255, 255, 255, 0.1)',

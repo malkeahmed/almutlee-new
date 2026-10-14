@@ -850,12 +850,40 @@ img {
   position: relative;
 }
 
+/* Light mode: white radar panel (dark mode keeps the navy panel) */
+:root:not([data-theme="dark"]) .hero-side-container {
+  background: #ffffff;
+  border-color: rgba(255, 190, 0, 0.45);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+
+:root:not([data-theme="dark"]) .hero-side-title {
+  color: #b78300 !important;
+}
+
+:root:not([data-theme="dark"]) .hero-side-live {
+  color: #7a5800 !important;
+}
+
+:root:not([data-theme="dark"]) .hero-side-tabs {
+  background: #f1f5f9 !important;
+}
+
+:root:not([data-theme="dark"]) .hero-side-tabs button[style*="transparent"] {
+  color: #475569 !important;
+}
+
+:root:not([data-theme="dark"]) .hero-side-footer {
+  color: #0f172a !important;
+  border-top-color: rgba(15, 23, 42, 0.12) !important;
+}
+
 .hero-side-item {
   display: flex;
   align-items: center;
   gap: 0.85rem;
   padding: 0.75rem;
-  background: rgba(255, 255, 255, 0.04);
+  background: #14223f;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 6px;
   cursor: pointer;
@@ -878,7 +906,7 @@ img {
 }
 
 .hero-side-item:hover {
-  background: rgba(255, 190, 0, 0.12);
+  background: #1c2e52;
   border-color: rgba(255, 190, 0, 0.45);
   transform: translateX(-5px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
@@ -2031,10 +2059,34 @@ img {
   color: #ffbe00 !important;
 }
 
+.ticker-wrapper {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.ticker-wrapper .ticker-text {
+  color: #0f172a;
+}
+
+.ticker-wrapper .ticker-time {
+  color: #475569;
+  background: #f1f5f9;
+}
+
 /* 7. Breaking Ticker in Dark Mode */
 [data-theme="dark"] .ticker-wrapper {
-  background-color: #091326 !important;
+  background-color: #0a1428 !important;
   border-color: #172544 !important;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .ticker-wrapper .ticker-text {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .ticker-wrapper .ticker-time {
+  color: #94a3b8;
+  background: rgba(255, 255, 255, 0.08);
 }
 
 /* 8. Opinions Section Special Styling */

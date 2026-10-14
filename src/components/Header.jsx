@@ -75,7 +75,7 @@ export default function Header({
       position: 'sticky',
       top: 0,
       zIndex: 1000,
-      background: '#0c1833',
+      background: '#1a2f5c',
       boxShadow: '0 8px 25px rgba(0, 0, 0, 0.4)',
       borderBottom: '3px solid var(--color-secondary)'
     }}>
@@ -167,7 +167,7 @@ export default function Header({
 
       {/* 2. CLASSIC CATEGORY NAVIGATION TIER: Clean Plain Text Categories with Underline */}
       <div className="header-category-scroller-wrap" style={{
-        background: '#071024',
+        background: '#14264d',
         borderTop: '1px solid rgba(255, 255, 255, 0.07)',
         padding: '0'
       }}>

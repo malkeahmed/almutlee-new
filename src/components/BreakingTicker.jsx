@@ -50,7 +50,6 @@ export default function BreakingTicker({ news, lang, onSelectArticle }) {
         left: 0,
         right: 0,
         zIndex: 999,
-        background: '#0a1428',
         borderTop: '2px solid var(--color-secondary)',
         boxShadow: '0 -4px 20px rgba(0, 0, 0, 0.4)',
         userSelect: 'none'
@@ -103,7 +102,6 @@ export default function BreakingTicker({ news, lang, onSelectArticle }) {
                   alignItems: 'center', 
                   gap: '0.6rem',
                   padding: '0 1.5rem',
-                  color: '#ffffff',
                   fontSize: '0.88rem',
                   fontWeight: 600,
                   direction: lang === 'ar' ? 'rtl' : 'ltr'
@@ -111,8 +109,8 @@ export default function BreakingTicker({ news, lang, onSelectArticle }) {
                 onClick={() => onSelectArticle(item)}
               >
                 <span style={{ color: 'var(--color-secondary)', fontWeight: 800 }}>•</span>
-                <span className="ticker-text" style={{ color: '#f8fafc' }}>{item.title[lang]}</span>
-                <span style={{ fontSize: '0.75rem', color: '#94a3b8', background: 'rgba(255,255,255,0.08)', padding: '0.1rem 0.4rem', borderRadius: '3px' }}>
+                <span className="ticker-text">{item.title[lang]}</span>
+                <span className="ticker-time" style={{ fontSize: '0.75rem', padding: '0.1rem 0.4rem', borderRadius: '3px' }}>
                   {item.publishedAt.split(' ')[1] || item.publishedAt}
                 </span>
               </div>
